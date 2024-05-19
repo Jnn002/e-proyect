@@ -1,4 +1,4 @@
-import 'package:e_proyecto/theme/text_theme.dart';
+import 'package:e_proyecto/theme/theme_exp.dart';
 import 'package:flutter/material.dart';
 class TappTheme{
 
@@ -11,6 +11,7 @@ class TappTheme{
   primaryColor: Colors.blue,
   scaffoldBackgroundColor: Colors.white,
   textTheme: TTextTheme.lightTextTheme,
+
     
   );
   static ThemeData darkTheme = ThemeData(
