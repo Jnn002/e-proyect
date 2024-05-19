@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:e_proyecto/theme/theme_exp.dart';
 
 void main() {
   runApp(const MyApp());
@@ -11,14 +12,8 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       themeMode: ThemeMode.system,
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-        textTheme: TextTheme(
-          bodyLarge: TextStyle(fontSize: 24, fontWeight: FontWeight.bold, color : Colors.green),
-        )
-
-      ),
-      darkTheme: ThemeData(),
+      theme: TappTheme.lightTheme,
+      darkTheme: TappTheme.darkTheme,
     );
   }
 }
