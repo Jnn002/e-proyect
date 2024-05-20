@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:e_proyecto/theme/theme_exp.dart';
+export 'package:e_proyecto/main/app.dart';
 
-void main() {
-  runApp(const MyApp());
-}
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
