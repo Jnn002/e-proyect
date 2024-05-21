@@ -1,6 +1,8 @@
 import 'package:e_proyecto/theme/theme_exp.dart';
 import 'package:flutter/material.dart';
 export 'package:e_proyecto/theme/theme_exp.dart';
+//import colores de app
+import 'package:e_proyecto/utils/constants/colors.dart';
 class TappTheme{
 
   TappTheme._();
