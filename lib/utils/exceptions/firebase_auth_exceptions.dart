@@ -1,4 +1,4 @@
-/// Custom exception class to handle various Firebase authentication-related errors.
+/* /// Custom exception class to handle various Firebase authentication-related errors.
 class TFirebaseAuthException implements Exception {
   /// The error code associated with the exception.
   final String code;
@@ -104,3 +104,4 @@ class TFirebaseAuthException implements Exception {
     }
   }
 }
+ */
