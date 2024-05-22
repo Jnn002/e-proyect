@@ -12,12 +12,12 @@ class OnboardingController extends GetxController {
   Rx<int>currentPageIndex = 0.obs;
 
   //Actualizzr el estado de la pagina scroll
-  void updtePageIndicator(index) => currentPageIndex = index;
+  void updtePageIndicator(index) => currentPageIndex.value = index;
 
   //salta a la pggina seleccionada por nuestros botones
   void dotNavigationClick(index){
     currentPageIndex.value = index;
-    pageController.jumpTo(index);
+    pageController.jumpTo(index.toDouble());
   }
   //actualizar el estado de la pagina y se mueve a lanueva pagina
   void nextPage(){
@@ -29,8 +29,7 @@ class OnboardingController extends GetxController {
     }
   }
 
-
-  //actualiza el estado de la pagina y regresa a la pagina anterior
+  //actualiza el estado de la pagina y se mueve a la pagina final
   void skipPage(){
     currentPageIndex.value = 2;
     pageController.jumpToPage(2);

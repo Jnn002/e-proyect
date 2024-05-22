@@ -36,16 +36,16 @@ class IncorporacionOnboarding extends StatelessWidget {
                 title: TTexts.onBoardingTitle3,
                 subtitle: TTexts.onBoardingSubTitle3,
               ),
-              //boton para salto
-              OnBoardingSkip(),
-              //control
-              OnBoardingDotNavigation(),
-              //Boton principal
-              OnBoardingNextButton(),
-
             ],
           ),
+              //boton para saltar todas las paginas
+              const OnBoardingSkip(),
+              //control por puntos
+              const OnBoardingDotNavigation(),
+              //Boton principal
+              const OnBoardingNextButton(),
         ],
+        
       ),
     );
   }
