@@ -8,7 +8,5 @@ void main() {
   //Todo await Native Splash
   //Todo init firebase
   //Todo init authentication
-  
-
 
 }

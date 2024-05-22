@@ -6,6 +6,7 @@ export 'package:e_proyecto/utils/constants/image_strings.dart';
 export 'package:e_proyecto/utils/constants/sizes.dart';
 export 'package:e_proyecto/utils/constants/text_strings.dart';
 //export de archivos de device
+export 'package:e_proyecto/utils/device/device_utility.dart';
 //export de archivos de exceptions
 //export de archivos de formatters
 //export de archivos de helpers

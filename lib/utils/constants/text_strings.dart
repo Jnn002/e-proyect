@@ -1,4 +1,4 @@
-
+export 'package:e_proyecto/utils/constants/text_strings.dart';
 /// This class contains all the App Text in String formats.
 class TTexts {
 
