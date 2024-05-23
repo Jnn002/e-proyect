@@ -6,6 +6,7 @@ import 'package:e_proyecto/screens/screens_authentication/controller/onboarding_
 import 'package:e_proyecto/screens/screens_authentication/widgets_exp.dart';
 import 'package:get/get.dart';
 
+export 'package:e_proyecto/screens/screens_exp.dart';
 
 class IncorporacionOnboarding extends StatelessWidget {
   const IncorporacionOnboarding({super.key});

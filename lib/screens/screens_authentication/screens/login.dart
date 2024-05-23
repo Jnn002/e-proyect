@@ -2,9 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:e_proyecto/common/common_exp.dart';
 import 'package:e_proyecto/utils/util_exp.dart';
 import 'package:iconsax/iconsax.dart';
+import 'package:get/get.dart';
 //import widgets
 import 'package:e_proyecto/screens/screens_authentication/widgets_exp.dart';
-
+import 'package:e_proyecto/screens/screens_exp.dart';
 class LoginScreen extends StatelessWidget {
   const LoginScreen({super.key});
 
@@ -79,7 +80,7 @@ class LoginScreen extends StatelessWidget {
               
               //Boton para crear cuenta
               SizedBox(width: double.infinity, child: OutlinedButton(
-                onPressed: (){},
+                onPressed: ()=> Get.to(()=> const SignupScreen()),
                 child: const Text(TTexts.createAccount),
                 ),),
                 const SizedBox(height: TSizes.spaceBtwItems,),
