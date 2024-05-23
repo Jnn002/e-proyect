@@ -1,3 +1,6 @@
+// Widget Bienvenida
+
+
 import 'package:e_proyecto/screens/screens_authentication/controller/onboarding_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:e_proyecto/utils/util_exp.dart';

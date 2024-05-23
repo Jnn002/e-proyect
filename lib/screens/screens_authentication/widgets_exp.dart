@@ -3,5 +3,6 @@ export 'package:e_proyecto/screens/screens_authentication/widgets/paginas_bienve
 export  'package:e_proyecto/screens/screens_authentication/widgets/salto_btn.dart';
 export 'package:e_proyecto/screens/screens_authentication/widgets/puntosnavegacion.dart';
 export 'package:e_proyecto/screens/screens_authentication/widgets/boton_principal.dart';
+export 'package:e_proyecto/screens/screens_authentication/widgets/divider.dart';
 
 //export de la pantalla de incorporacion

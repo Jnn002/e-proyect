@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+//import screens
+import 'package:e_proyecto/screens/screens_authentication/screens/login.dart';
 
 //export de nuestro controller
 export 'package:e_proyecto/screens/screens_authentication/controller/onboarding_controller.dart';
@@ -22,7 +24,7 @@ class OnboardingController extends GetxController {
   //actualizar el estado de la pagina y se mueve a lanueva pagina
   void nextPage(){
     if(currentPageIndex.value == 2){
-      //Get.to(LoginScreen());
+      Get.offAll(const LoginScreen());
     }else{
       int page = currentPageIndex.value + 1;
       pageController.jumpToPage(page);
