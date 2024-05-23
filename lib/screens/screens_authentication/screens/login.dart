@@ -92,22 +92,12 @@ class LoginScreen extends StatelessWidget {
               dividerText: TTexts.orSignInWith,
             ),
               const SizedBox(height: TSizes.spaceBtwSections),
-            Row(
+            const Row(
               // OPciones de inicio con redes sociales, google
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Container(
-                  decoration: BoxDecoration(
-                    border: Border.all(color: TColors.grey),
-                    borderRadius: BorderRadius.circular(100),
-                  ),
-                  child: IconButton(
-                    onPressed: (){},
-                    icon: const Image(image: AssetImage(
-                      TImages.google), height: TSizes.iconMd, width: TSizes.iconMd),
-                  ),
-                ),
-                const SizedBox(height: TSizes.spaceBtwItems,),
+                TSocialButtons(),
+                SizedBox(height: TSizes.spaceBtwItems,),
               ],
 
             )
@@ -115,6 +105,27 @@ class LoginScreen extends StatelessWidget {
             ],
           ),
         ),
+      ),
+    );
+  }
+}
+
+class TSocialButtons extends StatelessWidget {
+  const TSocialButtons({
+    super.key,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      decoration: BoxDecoration(
+        border: Border.all(color: TColors.grey),
+        borderRadius: BorderRadius.circular(100),
+      ),
+      child: IconButton(
+        onPressed: (){},
+        icon: const Image(image: AssetImage(
+          TImages.google), height: TSizes.iconMd, width: TSizes.iconMd),
       ),
     );
   }
