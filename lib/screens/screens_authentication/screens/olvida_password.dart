@@ -2,7 +2,6 @@
 import 'package:e_proyecto/screens/screens_authentication/screens/incorporacion_onboarding.dart';
 import 'package:e_proyecto/utils/constants/sizes.dart';
 import 'package:e_proyecto/utils/constants/text_strings.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
