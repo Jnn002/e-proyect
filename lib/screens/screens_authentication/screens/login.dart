@@ -64,7 +64,7 @@ class LoginScreen extends StatelessWidget {
                   ),
                   //Olvidaste tu contraseña, ir a recuperar
                   TextButton(
-                    onPressed: (){},
+                    onPressed: ()=> Get.to(()=> const ForgetPassword()),
                     child: const Text(TTexts.forgetPassword)),
                 ],
               ),

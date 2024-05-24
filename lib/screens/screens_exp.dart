@@ -9,6 +9,10 @@ export 'package:e_proyecto/screens/screens_authentication/screens/registroinicio
 export 'package:e_proyecto/screens/screens_authentication/screens/verificacion.dart';
 //screen verificacion exitosa
 export 'package:e_proyecto/screens/screens_authentication/screens/veri_exitosa.dart';
+//Screen olvido contraseña
+export 'package:e_proyecto/screens/screens_authentication/screens/olvida_password.dart';
+//screen resest contraseña
+export 'package:e_proyecto/screens/screens_authentication/screens/reset_contrase.dart';
 //Screens pantallas app
 
 //expport este archivo
