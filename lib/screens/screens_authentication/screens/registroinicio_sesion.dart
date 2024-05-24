@@ -1,6 +1,8 @@
 //import material y utils
+import 'package:e_proyecto/screens/screens_authentication/screens/incorporacion_onboarding.dart';
 import 'package:flutter/material.dart';
 import 'package:e_proyecto/utils/util_exp.dart';
+import 'package:get/get.dart';
 //import iconsax
 import 'package:iconsax/iconsax.dart';
 //import widgets
@@ -90,7 +92,7 @@ class SignupScreen extends StatelessWidget {
           SizedBox(
             width: double.infinity,
             child: ElevatedButton(
-              onPressed: () {},
+              onPressed: () =>Get.to(()=>const VerifyEmailScreen()),
               child: const Text(TTexts.createAccount),
             ),
           ),
