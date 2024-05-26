@@ -102,6 +102,6 @@ class TFirebaseAuthException implements Exception {
       default:
         return 'An unexpected authentication error occurred. Please try again.';
     }
-  }
+  }/*  */
 }
  */
