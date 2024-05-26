@@ -13,6 +13,10 @@ export 'package:e_proyecto/screens/screens_authentication/screens/veri_exitosa.d
 export 'package:e_proyecto/screens/screens_authentication/screens/olvida_password.dart';
 //screen resest contraseña
 export 'package:e_proyecto/screens/screens_authentication/screens/reset_contrase.dart';
+//export screen signin
+export 'package:e_proyecto/screens/screens_authentication/screens/iniciosesion.dart';
+
+
 //Screens pantallas app
 
 //expport este archivo
