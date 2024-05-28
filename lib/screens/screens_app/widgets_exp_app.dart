@@ -8,3 +8,7 @@ export 'package:e_proyecto/screens/screens_app/widgets/widget_curved_edges.dart'
 export 'package:e_proyecto/screens/screens_app/widgets/primary_header_container.dart';
 //export home appbar
 export 'package:e_proyecto/screens/screens_app/widgets/home_appbar.dart';
+//expor search container
+export 'package:e_proyecto/screens/screens_app/widgets/search_container.dart';
+//export home categories
+export 'package:e_proyecto/screens/screens_app/widgets/home_categories.dart';

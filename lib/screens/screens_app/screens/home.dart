@@ -1,24 +1,20 @@
 //import 'package:e_proyecto/common/widgets/curve_edges.dart';
 //import 'package:e_proyecto/utils/util_exp.dart';
-import 'package:e_proyecto/common/widgets/common_appbar.dart';
+import 'package:e_proyecto/common/common_exp.dart';
 import 'package:e_proyecto/utils/util_exp.dart';
 import 'package:flutter/material.dart';
 //import de widgets screens_app
 import 'package:e_proyecto/screens/screens_app/widgets_exp_app.dart';
+import 'package:iconsax/iconsax.dart';
 //import de widgets common
-import 'package:e_proyecto/common/common_exp.dart';
 //import de widgets de la aplicacion
-export 'package:e_proyecto/screens/screens_app/widgets_exp_app.dart';
-
-
-
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return  const  Scaffold(
       body: SingleChildScrollView(
         child: Column(
           children: [
@@ -27,7 +23,31 @@ class HomeScreen extends StatelessWidget {
               child:Column(
               children: [
                 // appbar de nuestra pagina home
-                  THomeAppBar(),
+                  const THomeAppBar(),
+                  const SizedBox(height: TSizes.spaceBtwItems),
+
+                // barra de Busqueda
+                TSearchContainer(
+                  text: 'Buscar',
+                  icon: Iconsax.search_normal,
+                ),
+                  const SizedBox(height: TSizes.spaceBtwItems),
+                  // categorias
+                  Padding(padding: const EdgeInsets.only(left: TSizes.defaultSpace),
+                  child: Column(
+                    children: [
+                    TSectionHeading(
+                      title: 'Categorias populares',
+                      showActionsButton: false,
+                      buttonTitle: 'Ver todo',
+                      textColor: TColors.white,
+                    ),
+                      const SizedBox(height: TSizes.spaceBtwItems),
+
+                    // categorias
+                    THomeCategories(),
+                  ],),
+                  ),
               ],
             ),
             ),
