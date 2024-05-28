@@ -18,6 +18,7 @@ export 'package:e_proyecto/screens/screens_authentication/screens/iniciosesion.d
 
 
 //Screens pantallas app
+export 'package:e_proyecto/screens/screens_app/screens/home.dart';
 
 //expport este archivo
 export 'package:e_proyecto/screens/screens_exp.dart';
