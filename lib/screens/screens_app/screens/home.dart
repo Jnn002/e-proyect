@@ -1,11 +1,17 @@
 //import 'package:e_proyecto/common/widgets/curve_edges.dart';
 //import 'package:e_proyecto/utils/util_exp.dart';
 import 'package:e_proyecto/common/widgets/common_appbar.dart';
+import 'package:e_proyecto/utils/util_exp.dart';
 import 'package:flutter/material.dart';
 //import de widgets screens_app
 import 'package:e_proyecto/screens/screens_app/widgets_exp_app.dart';
 //import de widgets common
 import 'package:e_proyecto/common/common_exp.dart';
+//import de widgets de la aplicacion
+export 'package:e_proyecto/screens/screens_app/widgets_exp_app.dart';
+
+
+
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -20,9 +26,8 @@ class HomeScreen extends StatelessWidget {
             TPrimaryHeaderContainer(
               child:Column(
               children: [
-                  TAppBar(
-
-                  ),
+                // appbar de nuestra pagina home
+                  THomeAppBar(),
               ],
             ),
             ),
@@ -32,3 +37,4 @@ class HomeScreen extends StatelessWidget {
     );
   }
 }
+
