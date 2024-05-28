@@ -1,3 +1,4 @@
+import 'package:e_proyecto/main/navigation_menu.dart';
 import 'package:flutter/material.dart';
 import 'package:e_proyecto/common/common_exp.dart';
 import 'package:e_proyecto/utils/util_exp.dart';
@@ -71,7 +72,7 @@ class LoginScreen extends StatelessWidget {
               const SizedBox(height: TSizes.spaceBtwSections),
               //Boton de inicio de sesion
               SizedBox(width: double.infinity, child: ElevatedButton(
-                onPressed: (){},
+                onPressed: ()=> Get.to(()=> const NavigationMenu()),
                 child: const Text(TTexts.signIn),
                 ),),
                 // separador entre items
