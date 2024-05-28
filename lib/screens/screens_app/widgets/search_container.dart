@@ -1,6 +1,5 @@
 import 'package:e_proyecto/utils/util_exp.dart';
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 
 class TSearchContainer extends StatelessWidget {
   const TSearchContainer({
