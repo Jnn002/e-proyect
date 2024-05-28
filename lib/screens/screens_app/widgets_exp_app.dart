@@ -12,3 +12,5 @@ export 'package:e_proyecto/screens/screens_app/widgets/home_appbar.dart';
 export 'package:e_proyecto/screens/screens_app/widgets/search_container.dart';
 //export home categories
 export 'package:e_proyecto/screens/screens_app/widgets/home_categories.dart';
+//expor promo slider
+export 'package:e_proyecto/screens/screens_app/widgets/widgets_home_inf/promo_slider.dart';

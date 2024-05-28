@@ -1,5 +1,6 @@
 //import 'package:e_proyecto/common/widgets/curve_edges.dart';
 //import 'package:e_proyecto/utils/util_exp.dart';
+import 'package:carousel_slider/carousel_slider.dart';
 import 'package:e_proyecto/common/common_exp.dart';
 import 'package:e_proyecto/utils/util_exp.dart';
 import 'package:flutter/material.dart';
@@ -14,7 +15,7 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  const  Scaffold(
+    return  Scaffold(
       body: SingleChildScrollView(
         child: Column(
           children: [
@@ -51,10 +52,23 @@ class HomeScreen extends StatelessWidget {
               ],
             ),
             ),
+            // area de productos o body
+            Padding (
+              padding: const EdgeInsets.all(TSizes.defaultSpace),
+              child:  TPromoSlider(
+                banners: [
+                  TImages.promoBanner1,
+                  TImages.promoBanner2,
+                  TImages.promoBanner3,
+                ],
+              ),
+            
+              )
           ],
         ), 
       ),
     );
   }
 }
+
 

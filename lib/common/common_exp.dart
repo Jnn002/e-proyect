@@ -8,7 +8,8 @@ export 'package:e_proyecto/common/widgets/product_cart/cart_menu_icon.dart';
 export 'package:e_proyecto/common/widgets/textos/sections_heading.dart';
 //export vertical image
 export 'package:e_proyecto/common/widgets/image_text_widget/vertical_image_.dart';
-
+//export widget images/t_rounded_image.dart
+export 'package:e_proyecto/common/widgets/images/t_rounded_image.dart';
 
 //export de este archivo
 export 'package:e_proyecto/common/common_exp.dart';
