@@ -19,6 +19,8 @@ export 'package:e_proyecto/screens/screens_authentication/screens/iniciosesion.d
 
 //Screens pantallas app
 export 'package:e_proyecto/screens/screens_app/screens/home.dart';
+//screen pantala tienda
+export 'package:e_proyecto/screens/screens_app/screens/store.dart';
 
 //expport este archivo
 export 'package:e_proyecto/screens/screens_exp.dart';

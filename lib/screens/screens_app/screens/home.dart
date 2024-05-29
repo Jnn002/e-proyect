@@ -15,26 +15,26 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  Scaffold(
+    return Scaffold(
       body: SingleChildScrollView(
         child: Column(
           children: [
               //area de header, header azul
-            TPrimaryHeaderContainer(
+            const TPrimaryHeaderContainer(
               child:Column(
               children: [
                 // appbar de nuestra pagina home
-                  const THomeAppBar(),
-                  const SizedBox(height: TSizes.spaceBtwItems),
+                  THomeAppBar(),
+                  SizedBox(height: TSizes.spaceBtwItems),
 
                 // barra de Busqueda
                 TSearchContainer(
                   text: 'Buscar',
                   icon: Iconsax.search_normal,
                 ),
-                  const SizedBox(height: TSizes.spaceBtwItems),
+                  SizedBox(height: TSizes.spaceBtwItems),
                   // categorias
-                  Padding(padding: const EdgeInsets.only(left: TSizes.defaultSpace),
+                  Padding(padding: EdgeInsets.only(left: TSizes.defaultSpace),
                   child: Column(
                     children: [
                     TSectionHeading(
@@ -43,7 +43,7 @@ class HomeScreen extends StatelessWidget {
                       buttonTitle: 'Ver todo',
                       textColor: TColors.white,
                     ),
-                      const SizedBox(height: TSizes.spaceBtwItems),
+                      SizedBox(height: TSizes.spaceBtwItems),
 
                     // categorias
                     THomeCategories(),
@@ -57,7 +57,7 @@ class HomeScreen extends StatelessWidget {
               padding: const EdgeInsets.all(TSizes.defaultSpace),
               child:  Column(
                 children: [
-                  TPromoSlider(
+                  const TPromoSlider(
                     banners: [
                       TImages.promoBanner1,
                       TImages.promoBanner2,
@@ -69,7 +69,7 @@ class HomeScreen extends StatelessWidget {
                 // productos en listado scroll 
                 TGridLayour(
                   itemCount: 4,
-                  itemBuilder: (_, index) => const TProductoCardVertical(),
+                  itemBuilder: (_, index) =>  const TProductoCardVertical(),
                 ),
                 ],
               ),

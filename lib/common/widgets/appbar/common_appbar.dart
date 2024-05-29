@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 //export de esete widget common_appbar.dart
-export 'package:e_proyecto/common/widgets/common_appbar.dart';
+export 'package:e_proyecto/common/widgets/appbar/common_appbar.dart';
 
 class TAppBar extends StatelessWidget implements PreferredSizeWidget{
   const TAppBar({super.key,
@@ -36,6 +36,5 @@ class TAppBar extends StatelessWidget implements PreferredSizeWidget{
   }
   
   @override
-  // TODO: implement preferredSize
   Size get preferredSize => Size.fromHeight(TDeviceUtils.getAppBarHeight());
 }

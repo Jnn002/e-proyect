@@ -8,13 +8,15 @@ class TSearchContainer extends StatelessWidget {
     this.icon,
     this.showBackgroud = true,
     this.showBorder = true,
-    this.onTap,
+    this.onTap, 
+    this.padding = const EdgeInsets.symmetric(horizontal: TSizes.defaultSpace),
 
   });
 final String text;
 final IconData? icon;
 final bool showBackgroud, showBorder;
 final void Function()? onTap;
+final EdgeInsetsGeometry padding;
 
   @override
   Widget build(BuildContext context) {

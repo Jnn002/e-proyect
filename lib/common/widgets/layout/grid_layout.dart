@@ -7,11 +7,13 @@ class TGridLayour extends StatelessWidget {
     super.key, 
     required this.itemCount, 
     required this.itemBuilder,
-    this.mainAxisAlignment = 288, 
+    this.mainAxisExtent = 288, 
+    //this.mainAxisExtent, 
   });
   final int itemCount;
-  final double? mainAxisAlignment;
+  final double? mainAxisExtent;
   final Widget? Function(BuildContext, int) itemBuilder;
+  //final double? mainAxisExtent;
 
   @override
   Widget build(BuildContext context) {
@@ -22,11 +24,11 @@ class TGridLayour extends StatelessWidget {
       physics: const NeverScrollableScrollPhysics(),
     
       //configuracion del gridview y alimento para el itembuilder
-    gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+    gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
     crossAxisCount: 2,
+    mainAxisExtent: mainAxisExtent,
     mainAxisSpacing: TSizes.gridViewSpacing,
     crossAxisSpacing: TSizes.gridViewSpacing,
-    mainAxisExtent: 280
     ), 
     itemBuilder:itemBuilder,
     );

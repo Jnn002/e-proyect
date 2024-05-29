@@ -4,7 +4,7 @@ export 'package:e_proyecto/common/styles/spacing_styles.dart';
 export 'package:e_proyecto/common/styles/shadows.dart';
 
 //export de common_appbar
-export 'package:e_proyecto/common/widgets/common_appbar.dart';
+export 'package:e_proyecto/common/widgets/appbar/common_appbar.dart';
 //export carpeta product cart; common
 export 'package:e_proyecto/common/widgets/product_cart/cart_menu_icon.dart';
 //e de sections heading
@@ -27,6 +27,12 @@ export 'package:e_proyecto/common/widgets/textos/product_titlte.dart';
 export 'package:e_proyecto/common/widgets/layout/grid_layout.dart';
 //export price etiqueta
 export 'package:e_proyecto/common/widgets/textos/price_etiqueta.dart';
+//export common ttabbar
+export 'package:e_proyecto/common/widgets/appbar/tabbar.dart';
+//expor brand card disp
+export 'package:e_proyecto/common/widgets/products/brand_card_disp.dart';
+//export brand showcase
+export 'package:e_proyecto/common/widgets/brands/brand_showcase.dart';
 
 //export de este archivo
 export 'package:e_proyecto/common/common_exp.dart';

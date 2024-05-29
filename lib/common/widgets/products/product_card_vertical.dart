@@ -33,7 +33,8 @@ class TProductoCardVertical extends StatelessWidget {
             backgroundColor: dark ? TColors.darkerGrey : TColors.white,
             child: Stack(
               children: [
-                TRoundedImage(imagenUrl: TImages.productImage1, applyImageRadius: true,),
+                //! pendiente de revisar, esta clase ajusta el fondo para nuestros productos
+                const TRoundedImage(imagenUrl: TImages.productImage1, applyImageRadius: true,),
                 // producto img
                 Positioned(
                   top: 12,

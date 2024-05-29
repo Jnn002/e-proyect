@@ -14,3 +14,11 @@ export 'package:e_proyecto/screens/screens_app/widgets/search_container.dart';
 export 'package:e_proyecto/screens/screens_app/widgets/home_categories.dart';
 //expor promo slider
 export 'package:e_proyecto/screens/screens_app/widgets/widgets_home_inf/promo_slider.dart';
+//export ttcircula image
+export 'package:e_proyecto/screens/screens_app/widgets/widget_store_1/ttcircular_image.dart';
+//export tbrand title text
+export 'package:e_proyecto/screens/screens_app/widgets/widget_store_1/brand_simple.dart';
+//export tbrand title with verified icon
+export 'package:e_proyecto/screens/screens_app/widgets/widget_store_1/t_brand_with_verification.dart';
+//export category_tab
+export 'package:e_proyecto/screens/screens_app/widgets/widget_store_1/category_tab.dart';
