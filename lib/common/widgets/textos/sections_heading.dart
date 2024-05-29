@@ -5,9 +5,9 @@ class TSectionHeading extends StatelessWidget {
     super.key,
     this.onPressed,
     required this.title,
-    required this.buttonTitle,
+    this.buttonTitle = 'Ver todo',
     this.textColor,
-    this.showActionsButton = false,
+    this.showActionsButton = true,
   });
   final String buttonTitle, title;
   final Color? textColor;
@@ -17,6 +17,7 @@ class TSectionHeading extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Row(
+      mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
       Text(title, style: Theme.of(context).textTheme.headlineSmall!.apply(color: textColor), maxLines: 1, overflow: TextOverflow.ellipsis,),
       if (showActionsButton) TextButton(onPressed: onPressed, child:  Text(buttonTitle)) 
