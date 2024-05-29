@@ -2,7 +2,6 @@ import 'package:e_proyecto/utils/util_exp.dart';
 import 'package:flutter/material.dart';
 //import common_exp
 //import super widget
-import 'package:iconsax/iconsax.dart';
 
 class TCircularIcon extends StatelessWidget {
   const TCircularIcon({
