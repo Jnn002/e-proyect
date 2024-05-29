@@ -1,11 +1,8 @@
 import 'package:e_proyecto/common/common_exp.dart';
 import 'package:e_proyecto/screens/screens_app/widgets_exp_app.dart';
-import 'package:e_proyecto/utils/helpers/helper_functions.dart';
 import 'package:e_proyecto/utils/util_exp.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
-import 'package:get/get.dart';
+//import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 export 'package:e_proyecto/screens/screens_app/widgets_exp_app.dart';
 
@@ -77,7 +74,7 @@ class StoreScreen extends StatelessWidget {
           ),
         ];
       },
-      body: TabBarView(
+      body: const TabBarView(
         children: [
           TCategoryTab(),
         ],
