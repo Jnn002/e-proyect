@@ -8,9 +8,9 @@ class TVerticalImageText extends StatelessWidget {
     required this.title, 
     required this.image, 
     this.textColor = TColors.white, 
-    this.backgroundColor = TColors.white, 
+    this.backgroundColor , 
     this.onTap,
-    
+    //= TColors.white
 
   });
   final String title, image;
@@ -37,7 +37,7 @@ class TVerticalImageText extends StatelessWidget {
                 borderRadius: BorderRadius.circular(100)
               ),
               child:  Center(
-                child: Image(image: AssetImage(image), fit: BoxFit.cover, color: TColors.dark),
+                child: Image(image: AssetImage(image), fit: BoxFit.cover, color: dark ? TColors.white : TColors.black,),
               ),
             ),
             //textos de categorias

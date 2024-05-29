@@ -21,6 +21,8 @@ export 'package:e_proyecto/screens/screens_authentication/screens/iniciosesion.d
 export 'package:e_proyecto/screens/screens_app/screens/home.dart';
 //screen pantala tienda
 export 'package:e_proyecto/screens/screens_app/screens/store.dart';
+//screeen pantalla wishlist
+export 'package:e_proyecto/screens/screens_app/screens/wishlist.dart';
 
 //expport este archivo
 export 'package:e_proyecto/screens/screens_exp.dart';

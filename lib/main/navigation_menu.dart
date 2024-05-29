@@ -43,7 +43,7 @@ class NavigationController extends GetxController {
   final screens =[
     const HomeScreen(),
     const StoreScreen(),
-    Container(color: Colors.blue,),
+    const FavouriteScreen(),
     Container(color: Colors.pink,),
   ];
   //void updateIndex(int index) => selectedIndex.value = index;

@@ -62,8 +62,8 @@ class TProductoCardVertical extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              TProductTittleText(title: 'Tenis NIke, BlueStyle', smallsize: true),
-              SizedBox(height: TSizes.spaceBtwItems/3),
+              const TProductTittleText(title: 'Tenis NIke, BlueStyle', smallsize: true),
+              const SizedBox(height: TSizes.spaceBtwItems/3),
               Row(
                 children: [
                   Text('Nike', overflow: TextOverflow.ellipsis, maxLines: 1, style: Theme.of(context).textTheme.labelMedium,),
@@ -77,15 +77,17 @@ class TProductoCardVertical extends StatelessWidget {
           ),
               const Spacer(),
               Row(
+                //etiqueta de precio
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Padding(
-                    padding: const EdgeInsets.only(left: TSizes.sm),
-                    child: const TProductpriceText(
+                  const Padding(
+                    padding:  EdgeInsets.only(left: TSizes.sm),
+                    child:  TProductpriceText(
                       currencySign: 'Q',
                       price: '720',
                     ),
                   ),
+                  //boton de añadir al carrito
                   Container(decoration: const BoxDecoration(
                     color: TColors.dark,
                     borderRadius: BorderRadius.only(

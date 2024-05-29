@@ -31,7 +31,7 @@ class StoreScreen extends StatelessWidget {
             expandedHeight: 440,
       
             flexibleSpace: Padding(
-              padding: EdgeInsets.all(TSizes.defaultSpace),
+              padding: const EdgeInsets.all(TSizes.defaultSpace),
               child: ListView(
                 shrinkWrap: true,
                 physics: const NeverScrollableScrollPhysics(),
@@ -62,6 +62,7 @@ class StoreScreen extends StatelessWidget {
                 ],
               ),
             ),
+            //barra media con opciones para categoiras
             bottom:const TTabBar(
               tabs: [
                 Tab(child: Text('Depoertes'),),
@@ -74,6 +75,7 @@ class StoreScreen extends StatelessWidget {
           ),
         ];
       },
+      //cuadro con img de una marca y productos
       body: const TabBarView(
         children: [
           TCategoryTab(),
